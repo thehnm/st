@@ -36,3 +36,4 @@ Patches
 -------
 - vertcenter
 - scrollback + mousescrolling with shift
+- externalpipe + openurl, copyurl, copyoutput by Luke Smith

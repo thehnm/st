@@ -44,7 +44,7 @@ Patches
 
 - vertcenter (https://st.suckless.org/patches/vertcenter/)
 - scrollback + mousescrolling with shift (https://st.suckless.org/patches/scrollback/)
-- externalpipe + openurl, copyurl, copyoutput by Luke Smith (https://st.suckless.org/patches/externalpipe/)
+- externalpipe + openurl, copyurl, copyoutput by Luke Smith (https://st.suckless.org/patches/externalpipe/, https://github.com/lukesmithxyz/st)
 - ligature support (compatibility with scrollback) (https://st.suckless.org/patches/ligatures/)
 
 

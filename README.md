@@ -39,6 +39,7 @@ Based on Aurélien APTEL `aurelien dot aptel at gmail dot com` bt source code.
 - [scrollback + mousescrolling with shift](https://st.suckless.org/patches/scrollback/)
 - [externalpipe](https://st.suckless.org/patches/externalpipe/) + [openurl, copyurl, copyoutput by Luke Smith](https://github.com/lukesmithxyz/st)
 - [ligature support, compatibility with scrollback](https://st.suckless.org/patches/ligatures/)
+- [Xresources support](https://st.suckless.org/patches/xresources/)
 
 ## st Terminal Hotkey Configuration
 

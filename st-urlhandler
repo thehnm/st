@@ -10,6 +10,6 @@ urls="$(sed 's/.*│//g' | tr -d '\n' |
 
 [ -z "$urls" ] && exit
 
-chosen="$(echo "$urls" | dmenu -fn 'Fira Mono:style=bold:size=11' -nb '#282828' -sb '#768896' -nf '#c5c8c6' -sf '#282828' -i -p 'Follow which url?' -l 10)"
+chosen="$(echo "$urls" | dmenu -i -p 'Follow which url?' -l 10)"
 
 setsid xdg-open "$chosen" >/dev/null 2>&1 &

@@ -1,12 +1,30 @@
 /* See LICENSE file for copyright and license details. */
 
+#define black "#181926"
+#define pn1 "#2e3440"
+#define pn2 "#3b4252"
+#define pn3 "#434c5e"
+#define pn4 "#4c566a"
+#define ss1 "#d8dee9"
+#define ss2 "#e5e9f0"
+#define ss3 "#eceff4"
+#define fr1 "#8fbcbb"
+#define fr2 "#88c0d0"
+#define fr3 "#81a1c1"
+#define fr4 "#5e81ac"
+#define au1 "#bf616a"
+#define au2 "#d08770"
+#define au3 "#ebcb8b"
+#define au4 "#a3be8c"
+#define au5 "#b48ead"
+
 /*
  * appearance
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "mono:pixelsize=16:antialias=true:autohint=true";
-static int borderpx = 8;
+static int borderpx = 12;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -96,40 +114,41 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static char *colorscheme[] = {
 	/* 8 normal colors */
-    "#282828",
-    "#cc241d",
-    "#98971a",
-    "#d79921",
-    "#458588",
-    "#b16286",
-    "#689d6a",
-    "#a89984",
+    pn2,
+    au1,
+    au4,
+    au3,
+    fr3,
+    au5,
+    fr2,
+    ss2,
     /* 8 bright colors */
-    "#928374",
-    "#fb4934",
-    "#b8bb26",
-    "#fabd2f",
-    "#83a598",
-    "#d3869b",
-    "#8ec07c",
-    "#ebdbb2",
+    pn4,
+    au1,
+    au4,
+    au3,
+    fr3,
+    au5,
+    fr1,
+    ss3,
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-    "#282828",
-    "#ebdbb2",
-    "#707880",
+
+    pn1,
+    ss3,
+    ss3,
 };
 
 /*
  * Default colors (colorscheme index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 257;
 unsigned int defaultbg = 256;
-unsigned int defaultcs = 7;
-unsigned int defaultrcs = 7;
+unsigned int defaultfg = 257;
+unsigned int defaultcs = 258;
+unsigned int defaultrcs = 258;
 
 /*
  * Default shape of cursor
